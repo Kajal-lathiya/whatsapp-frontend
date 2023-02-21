@@ -10,7 +10,7 @@ import { SearchOutlined } from "@mui/icons-material";
 import "./SideBar.css";
 import Contact from "../Contact/Contact";
 
-const Sidebar = () => {
+const Sidebar = ({setCanShowChat}) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -23,7 +23,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <div className="sidebar__header_left">
+        <div className="sidebar__header_left" onClick={() => setCanShowChat(true)}>
           <IconButton>
             <AccountCircle />
           </IconButton>
@@ -68,7 +68,7 @@ const Sidebar = () => {
       </div>
 
       <div className="sidebar__chats">
-        <Contact/>
+        <Contact  />
     
       </div>
     </div>

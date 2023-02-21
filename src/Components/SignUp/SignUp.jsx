@@ -50,7 +50,7 @@ export default function SignUpPage() {
                 </p>
             </form>
             <footer>
-                <p><Link to="/login">Login</Link>.</p>
+                <p><Link to="/login">Login</Link></p>
             </footer>
         </div>
             </div>
