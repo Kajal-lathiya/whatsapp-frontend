@@ -3,6 +3,7 @@ import './SignIn.css'
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"
 const LoginPage = () => {
+  // const [isLoading, setIsLoading] = useState(true)
     return (
       <>
         <div className="login">

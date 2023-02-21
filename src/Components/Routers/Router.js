@@ -1,5 +1,3 @@
-import ChatRoom from "../chatRoom/ChatRoom";
-import Chat from "../chats/Chats";
 import Home from "../Home/Home";
 import SignInPage from "../SignIn/SignIn";
 import SignUpPage from "../SignUp/SignUp";
@@ -21,16 +19,7 @@ const RouterApi = [
         path:"/register",
         element:<SignUpPage/>,
     },
-    {
-        id:4,
-        path:"/chatRoom",
-        element:<ChatRoom/>
-    },
-    {
-        id:5,
-        path:"/chat",
-        element:<Chat/>
-    }
+
 ] 
 
 export default RouterApi
