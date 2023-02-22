@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useState } from "react";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/actions";
 const LoginPage = () => {
   // const [isLoading, setIsLoading] = useState(true)
@@ -13,7 +13,9 @@ const LoginPage = () => {
   const onChangeHandler = (value, fieldToSet) => {
     fieldToSet(value);
   };
+  const reducer = useSelector(state => state);
   const dispatch = useDispatch();
+  console.log("reducer:", reducer);
   const submit = (e) => {
     e.preventDefault();
     dispatch(login(email, password));

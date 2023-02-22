@@ -1,7 +1,7 @@
 import { LOG_IN } from "../actions";
 
 const initialState = {
-  user: {},
+  user: [],
 };
 
 const chatsReducer = (state = initialState, action) => {

@@ -7,14 +7,14 @@ import storage from "redux-persist/lib/storage";
 const persistConfig = {
   key: "root",
   storage: storage,
-  transforms: [
-    encryptTransform({
-      secretKey: "somekey",
-      onError: function (error) {
-        console.log(error);
-      },
-    }),
-  ],
+  // transforms: [
+  //   encryptTransform({
+  //     secretKey: process.env.REACT_APP_SECRET_KEY,
+  //     // onError: function (error) {
+  //     //   console.log(error);
+  //     // },
+  //   }),
+  // ],
 };
 
 const bigReducer = combineReducers({
