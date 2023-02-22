@@ -80,7 +80,7 @@ export const getMyUserDetailsAction = (accessToken) => {
       let response = await fetch(`http://localhost:3001/users/me`, optionsGet);
       if (response.ok) {
         let data = await response.json();
-        console.log("🚀 ~ file: index.js:34 ~ return ~ data:", data);
+        console.log(" ~ file: index.js:34 ~ return ~ data:", data);
         dispatch({
           type: SAVE_USER,
           payload: data,
